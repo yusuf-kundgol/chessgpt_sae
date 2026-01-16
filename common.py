@@ -48,7 +48,7 @@ from huggingface_hub import hf_hub_download
 import chess_utils
 
 import pickle
-with open('meta.pkl', 'rb') as picklefile:
+with open('/root/train_ChessGPT/data/lichess_hf_dataset/meta.pkl', 'rb') as picklefile:
     meta = pickle.load(picklefile)
 
 device = torch.device("cuda:0")
